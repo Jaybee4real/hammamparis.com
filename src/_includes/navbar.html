@@ -10,19 +10,19 @@
   <div class="navbar">
     <div class="logo">hammamparis.com</div>
     <div class="links-container">
-      <a class="nav-link active">Accueil</a>
-      <a class="nav-link">Notre Enterprise</a>
-      <a class="nav-link">Nos Services</a>
-      <a class="nav-link">Contact</a>
-      <a class="nav-link">Rendez Vous</a>
+      <a href="{% link accueil.html %}" class="{% if page.url == '/' %} active {% endif %} nav-link">Accueil</a>
+      <a href="{% link notre-spa.html %}" class="{% if page.url == '/notre-spa' %} active {% endif %} nav-link">Notre Spa</a>
+      <a href="{% link service.html %}" class="{% if page.url == '/service' %} active {% endif %} nav-link">Nos Services</a>
+      <a href="{% link contact.html %}" class="{% if page.url == '/contact' %} active {% endif %} nav-link">Contact</a>
+      <a href="{% link reservation.html %}" class="{% if page.url == '/reservation' %} active {% endif %} nav-link">Réservation</a>
       <i class="fa fa-bars"></i>
     </div>
     <div class="mobile-nav-container">
-      <a class="mobile-nav-link active">Accueil</a>
-      <a class="mobile-nav-link">Notre Enterprise</a>
-      <a class="mobile-nav-link">Nos Services</a>
-      <a class="mobile-nav-link">Contact</a>
-      <a class="mobile-nav-link">Rendez Vous</a>
+      <a href="{% link accueil.html %}" class="{% if page.url == '/' %} active {% endif %} mobile-nav-link active">Accueil</a>
+      <a href="{% link notre-spa.html %}" class="{% if page.url == '/notre-spa' %} active {% endif %} mobile-nav-link">Notre Spa</a>
+      <a href="{% link service.html %}" class="{% if page.url == '/service' %} active {% endif %} mobile-nav-link">Nos Services</a>
+      <a href="{% link contact.html %}" class="{% if page.url == '/contact' %} active {% endif %} mobile-nav-link">Contact</a>
+      <a href="{% link reservation.html %}" class="{% if page.url == '/reservation' %} active {% endif %} mobile-nav-link">Réservation</a>
     </div>
   </div>
 </div>

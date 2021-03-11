@@ -21,6 +21,10 @@ body, html {
   width: 100vw;
 }
 
+a:visited, a{
+  color: inherit;
+}
+
 $theme-color: #93ccdf;
 
 .navbar-container {
