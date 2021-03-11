@@ -15,7 +15,7 @@
       <a href="{% link service.html %}" class="{% if page.url == '/service' %} active {% endif %} nav-link">Nos Services</a>
       <a href="{% link contact.html %}" class="{% if page.url == '/contact' %} active {% endif %} nav-link">Contact</a>
       <a href="{% link reservation.html %}" class="{% if page.url == '/reservation' %} active {% endif %} nav-link">Réservation</a>
-      <i class="fa fa-bars"></i>
+      <i class="fa fa-bars mobile-nav-toggle"></i>
     </div>
     <div class="mobile-nav-container">
       <a href="{% link accueil.html %}" class="{% if page.url == '/' %} active {% endif %} mobile-nav-link active">Accueil</a>
@@ -26,3 +26,11 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  document.querySelector(".mobile-nav-toggle , *").addEventListener("click", () => {
+    document.querySelector(".mobile-nav-container").classList.toggle("active")
+  })
+
+</script>

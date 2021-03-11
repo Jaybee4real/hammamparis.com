@@ -67,6 +67,7 @@ $theme-color: #93ccdf;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 
     .logo {
       font-size: 3rem;
@@ -89,10 +90,11 @@ $theme-color: #93ccdf;
       }
 
       .nav-link {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         font-family: "Montserrat", sans-serif;
         transition: all 0.4s ease;
         cursor: pointer;
+        text-transform: uppercase;
 
         &.active,
         &:hover {
@@ -104,11 +106,14 @@ $theme-color: #93ccdf;
     .mobile-nav-container {
       display: none;
       flex-direction: column;
-      position: relative;
+      position: absolute;
       top: 1rem;
       border: 1px solid $theme-color;
       font-size: 1rem;
       min-width: 250px;
+      transition: all .4s ease;
+      background-color: white;
+      top: 8rem;
 
       &.active {
         display: flex;
@@ -500,6 +505,9 @@ $theme-color: #93ccdf;
   .info {
     margin: 1rem;
     color: #3f3f3f;
+    max-width: 95vw;
+    // margin: auto; 
+
 
     img {
       height: 15rem;
@@ -678,6 +686,7 @@ $theme-color: #93ccdf;
       flex-direction: column;
       align-items: center;
       margin: 1rem;
+      max-width: 95vw;
       img {
         height: 30rem;
         width: 22rem;
