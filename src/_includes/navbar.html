@@ -29,8 +29,12 @@
 
 
 <script>
-  document.querySelector(".mobile-nav-toggle , *").addEventListener("click", () => {
+  document.querySelector(".mobile-nav-toggle").addEventListener("click", () => {
     document.querySelector(".mobile-nav-container").classList.toggle("active")
+  })
+
+  document.querySelector("*").addEventListener("click", () => {
+    document.querySelector(".mobile-nav-container").classList.remove("active")
   })
 
 </script>

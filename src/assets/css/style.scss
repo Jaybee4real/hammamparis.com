@@ -111,7 +111,7 @@ $theme-color: #93ccdf;
       border: 1px solid $theme-color;
       font-size: 1rem;
       min-width: 250px;
-      transition: all .4s ease;
+      transition: all 0.4s ease;
       background-color: white;
       top: 8rem;
 
@@ -506,8 +506,7 @@ $theme-color: #93ccdf;
     margin: 1rem;
     color: #3f3f3f;
     max-width: 95vw;
-    // margin: auto; 
-
+    // margin: auto;
 
     img {
       height: 15rem;
@@ -549,6 +548,7 @@ $theme-color: #93ccdf;
     .section-heading {
       text-align: left;
       margin-bottom: 2rem;
+      line-height: 1.2;
     }
     .button {
       margin-left: 2rem;
@@ -597,9 +597,9 @@ $theme-color: #93ccdf;
         background-color: transparent;
         border: 1.5px solid #555555;
         padding: 0.7rem;
-        font-family: "Montserrat",sans-serif;
-        font-size: .8rem;
-        ::placeholder{
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.8rem;
+        ::placeholder {
           font-weight: "600";
         }
       }
@@ -608,9 +608,9 @@ $theme-color: #93ccdf;
         color: #4b6b75;
         margin-left: 0.5rem;
         cursor: pointer;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
 
-        &:hover{
+        &:hover {
           color: #93ccdf;
         }
       }
@@ -741,7 +741,7 @@ $theme-color: #93ccdf;
 }
 
 .header-container {
-  min-height: 500px;
+  min-height: 400px;
   background-image: url(../img/mt-1741-home-bg1.jpg);
   background-attachment: fixed;
   display: flex;
@@ -754,5 +754,60 @@ $theme-color: #93ccdf;
     font-size: 3.7rem;
     text-align: center;
     color: white;
+
+    &.bold {
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+
+// Service Page////
+
+.service-list-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 5vw;
+
+  .box {
+    width: 500px;
+    min-height: 350px;
+    max-width: 97vw !important;
+    margin: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:nth-of-type(1) {
+      background-image: url(../img/mt-1741-services-img1.jpg);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../img/mt-1741-services-img2.jpg);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../img/mt-1741-services-img3.jpg);
+    }
+    &:nth-of-type(4) {
+      background-image: url(../img/mt-1741-services-img4.jpg);
+    }
+    &:nth-of-type(5) {
+      background-image: url(../img/mt-1741-services-img5.jpg);
+    }
+    &:nth-of-type(6) {
+      background-image: url(../img/mt-1741-services-img6.jpg);
+    }
+
+    .service-caption {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
   }
 }
