@@ -1,5 +1,26 @@
 ---
 layout: default
 permalink: /reservation
-title : Réservation
+title: Réservation
 ---
+
+<div class="page-wrapper">
+  <div class="breadcrumb-container">
+    <a href="{% link accueil.html %}">Accuiel</a><span>/</span
+    ><a class="active">Réservation</a>
+  </div>
+
+  <div class="header-container">
+    <div class="caption bold">Réservation</div>
+  </div>
+  <div class="contact-wrapper devis section">
+    <div class="heading">Prendre RDV</div>
+    <form>
+      <input type="text" placeholder="Your Name" />
+      <input type="text" placeholder="Your Email" />
+      <input type="text" placeholder="Spa Type" />
+      <textarea rows="10" cols="3" placeholder="Your Messsage"></textarea>
+      <button type="submit" class="button">SEND</button>
+    </form>
+  </div>
+</div>
